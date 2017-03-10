@@ -1,0 +1,68 @@
+{
+    "status": 1,
+    "result": {
+        "totalMoney": 59,
+        "list": [{
+                "productId": "600100002115",
+                "productName": "黄鹤楼香烟",
+                "productPrice": 20,
+                "productQuentity": 1,
+                "productdesc": "不错的牌子啊",
+                "productImage": "img/goods-1.jpg",
+                "parts": [{
+                    "partsId": "10001",
+                    "partsName": "打火机"
+                }]
+            },
+            {
+                "productId": "600100002116",
+                "productName": "白象香烟",
+                "productPrice": 30,
+                "productQuentity": 2,
+                "productdesc": "不错的牌子啊",
+                "productImage": "img/goods-1.jpg",
+                "parts": [{
+                    "partsId": "10003",
+                    "partsName": "打火机"
+                }]
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 33,
+                "productQuentity": 5,
+                "productdesc": "不错的牌子啊",
+                "productImage": "img/goods-2.jpg",
+                "parts": [{
+                    "partsId": "20001",
+                    "partsName": "吸管"
+                }]
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 33,
+                "productQuentity": 5,
+                "productdesc": "不错的牌子啊",
+                "productImage": "img/goods-2.jpg",
+                "parts": [{
+                    "partsId": "20001",
+                    "partsName": "吸管"
+                }]
+            },
+            {
+                "productId": "600100002120",
+                "productName": "加多宝",
+                "productPrice": 33,
+                "productQuentity": 5,
+                "productdesc": "不错的牌子啊",
+                "productImage": "img/goods-2.jpg",
+                "parts": [{
+                    "partsId": "20001",
+                    "partsName": "吸管"
+                }]
+            }
+        ]
+    },
+    "message": ""
+}
