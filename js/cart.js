@@ -14,16 +14,16 @@ window.vm = new Vue({
         this.cartView();
         this.cattotalMoney();
     },
-	//过滤器
-	filters: {
-		formatMoney: function (value,quentity) {
-			if(!quentity)quentity=1;
-			return "¥ "+(value*quentity).toFixed(2) +"元";
-		}
+    //过滤器
+    filters: {
+        formatMoney: function (value,quentity) {
+	    if(!quentity)quentity=1;
+	       return "¥ "+(value*quentity).toFixed(2) +"元";
+	     }
 	},
 
     methods: {
-		//计算总钱数
+	//计算总钱数
         cattotalMoney() {
             let totalMoney = 0;
             this.productList.forEach(function(item) {
@@ -34,7 +34,7 @@ window.vm = new Vue({
             this.totalMoney = totalMoney;
         },
 
-		//全选
+	//全选
         selectAll(isCheck) {
             this.checkAll = isCheck;
             this.productList.forEach(function(item) {
@@ -47,7 +47,7 @@ window.vm = new Vue({
             this.cattotalMoney();
         },
 
-		//单选
+	//单选
         selsecitem(items) {
             if (typeof items.checked == 'undefined') {
                 this.$set(items, "checked", true);
@@ -57,7 +57,7 @@ window.vm = new Vue({
             this.cattotalMoney();
         },
 
-		//数量操作
+	//数量操作
         add(items, way) {
             if (way > 0) {
                 items.productQuentity++;
@@ -79,18 +79,17 @@ window.vm = new Vue({
                 }
             });
         },
-     
+   
         del(items) {
             this.shows = true;
         },
-		close(){
-			this.shows = false;
-		},
-		delss(){
-			this.shows = false;
-			var index = this.productList.indexOf(this.currentProduct);
-			this.productList.splice(index,1);
-		},
-
+	close(){
+	    this.shows = false;
+	},
+	delss(){
+	    this.shows = false;
+	    var index = this.productList.indexOf(this.currentProduct);
+	    this.productList.splice(index,1);
+	},
     },
 });
